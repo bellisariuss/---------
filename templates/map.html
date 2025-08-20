@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pamporovo Map</title>
+  <script src="{{ url_for('static', filename='js/imageMapResizer.min.js') }}"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: #111;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    img {
+      max-width: 100vw;
+      max-height: 100vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    h1 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select a piste</h1>
+  <img src="{{ url_for('static', filename='images/ec84d3e850.jpg') }}"
+       usemap="#pamporovo-map"
+       alt="Pamporovo Map">
+  <map name="pamporovo-map">
+    <area shape="rect" coords="650,140,700,180" href="/piste/snejanka" alt="Snejanka">
+    <area shape="rect" coords="970,250,1020,290" href="/piste/malina" alt="Malina">
+    <area shape="rect" coords="760,160,810,200" href="/piste/wall" alt="Wall">
+  </map>
+  <script>
+    window.addEventListener('load', function() {
+      imageMapResize();
+    });
+  </script>
+</body>
+</html>

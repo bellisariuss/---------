@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <title>{{ resort }} - Ски Препоръка</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      overflow: auto;
+    }
+    .background-wrapper {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    .background-wrapper img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+    .form-container {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      padding: 2rem;
+      width: 300px;
+      border-radius: 16px;
+      z-index: 10;
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .form-container h2 {
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .form-container label {
+      font-size: 0.9rem;
+    }
+    .form-container input,
+    .form-container select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #00bcd4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .form-container button:hover {
+      background-color: #0097a7;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, 20%); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-wrapper">
+    <img src="{{ url_for('static', filename=image) }}" alt="Карта на {{ resort }}">
+    <div class="form-container">
+      <h2>{{ resort }} - Ски форма</h2>
+      <form method="POST">
+        <label>Име на писта:</label>
+        <input type="text" name="piste" required>
+
+        <label>Ниво на умения:</label>
+        <select name="skill" required>
+          <option value="beginner">Начинаещ</option>
+          <option value="intermediate">Средно ниво</option>
+          <option value="advanced">Напреднал</option>
+        </select>
+
+        <label>Височина (см):</label>
+        <input type="number" name="height" required>
+
+        <label>Тегло (кг):</label>
+        <input type="number" name="weight" required>
+
+        <label>Ширина на ските (мм):</label>
+        <input type="number" name="width" required>
+
+        <button type="submit">Получи препоръка</button>
+      </form>
+
+      {% if recommendation %}
+        <h3 style="margin-top: 1rem; font-weight: 500;">Препоръка:</h3>
+        <p>{{ recommendation }}</p>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

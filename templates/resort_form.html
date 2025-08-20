@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <title>{{ resort }} - Ски Препоръка</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      overflow: auto;
+    }
+    .background-wrapper {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    .background-wrapper img {
+      width: 100%;
+      height: auto;
+    }
+    .form-container {
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      padding: 2rem;
+      width: 300px;
+      border-radius: 16px;
+      z-index: 10;
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .form-container h2 {
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .form-container label {
+      font-size: 0.9rem;
+    }
+    .form-container input,
+    .form-container select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #00bcd4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .form-container button:hover {
+      background-color: #0097a7;
+    }
+    .warning {
+      background-color: #f44336;
+      color: white;
+      padding: 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .level-green { background-color: #4caf50; color: white; }
+    .level-blue { background-color: #2196f3; color: white; }
+    .level-red { background-color: #f44336; color: white; }
+    .level-black { background-color: #212121; color: white; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-wrapper">
+    <img src="{{ url_for('static', filename=image) }}" alt="Карта на {{ resort }}">
+    <div class="form-container">
+      <h2>{{ resort }} - Ски форма</h2>
+      {% if warning %}
+        <div class="warning">{{ warning }}</div>
+      {% endif %}
+      <form method="POST">
+        <label>Избери писта:</label>
+        <select name="piste_color" required>
+          <option value="green" class="level-green">Зелена</option>
+          <option value="blue" class="level-blue">Синя</option>
+          <option value="red" class="level-red">Червена</option>
+          <option value="black" class="level-black">Черна</option>
+        </select>
+
+        <label>Ниво на умения:</label>
+        <select name="skill" required>
+          <option value="beginner">Начинаещ</option>
+          <option value="intermediate">Средно ниво</option>
+          <option value="advanced">Експерт</option>
+        </select>
+
+        <label>Височина (см):</label>
+        <input type="number" name="height" required>
+
+        <label>Стил на каране:</label>
+        <select name="style" required>
+          <option value="dynamic">Динамичен</option>
+          <option value="all mountain">All Mountain</option>
+          <option value="speed">Бързина и дълги завои</option>
+        </select>
+
+        <button type="submit">Получи препоръка</button>
+      </form>
+
+      {% if recommendation %}
+        <h3>Препоръка:</h3>
+        <p>{{ recommendation }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+<script>
+  // Debugging output
+  console.log("Skill:", "{{ skill|default('') }}");
+  console.log("Predicted type:", "{{ predicted_type|default('') }}");
+  console.log("Recommendation:", "{{ recommendation|default('') }}");
+</script>
+</body>
+</html>

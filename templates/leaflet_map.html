@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pamporovo Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #1e1e1e; /* Optional darker bg */
+    }
+
+    #map {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    const map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: -2,
+      zoomControl: true
+    });
+
+    const imageWidth = 1600;
+    const imageHeight = 1000;
+    const bounds = [[0, 0], [imageHeight, imageWidth]];
+
+    L.imageOverlay("/static/images/ec84d3e850.jpg", bounds).addTo(map);
+    map.fitBounds(bounds);
+
+    const pistes = {
+      snejanka: { coords: [200, 700], name: "Snejanka" },
+      malina: { coords: [400, 1000], name: "Malina" },
+      wall: { coords: [300, 800], name: "Wall" }
+    };
+
+    Object.entries(pistes).forEach(([key, data]) => {
+      L.marker(data.coords)
+        .addTo(map)
+        .bindPopup(`<b>${data.name}</b><br><a href='/piste/${key}'>Choose this piste</a>`);
+    });
+
+    const pisteAreas = {
+      snejanka: { bounds: [[180, 680], [220, 720]], name: "Snejanka" },
+      malina: { bounds: [[380, 980], [420, 1020]], name: "Malina" },
+      wall: { bounds: [[280, 780], [320, 820]], name: "Wall" }
+    };
+
+    Object.entries(pisteAreas).forEach(([key, data]) => {
+      L.rectangle(data.bounds, {color: "red", weight: 2, fillOpacity: 0.2})
+        .addTo(map)
+        .bindPopup(`<b>${data.name}</b><br><a href='/piste/${key}'>Choose this piste</a>`)
+        .on('click', () => window.location.href = `/piste/${key}`);
+    });
+  </script>
+</body>
+</html>

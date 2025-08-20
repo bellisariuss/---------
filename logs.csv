@@ -1,0 +1,176 @@
+timestamp,resort,skill,height,weight,piste,length,stiffness
+2025-05-31 22:23:28,pamporovo,intermediate,190,103,туристическа,178,stiff
+2025-06-12 21:29:05,pamporovo,intermediate,187,dynamic,black,170,пистови
+2025-06-12 21:43:19,pamporovo,intermediate,187,dynamic,black,170,пистови
+2025-06-16 18:41:01,pamporovo,intermediate,186,all-mountain,blue,170,ол-маунтин
+2025-07-26 21:28:10,pamporovo,beginner,170,speed,green,157,слалом
+2025-08-02 18:21:18,pamporovo,Експерт,180,all-mountain,Зелена,165,All-Mountain
+2025-08-02 18:21:47,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:22:04,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:22:32,pamporovo,Средно ниво,186,all-mountain,Зелена,182,All-Mountain
+2025-08-02 18:22:46,pamporovo,Експерт,170,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:22:51,pamporovo,Експерт,170,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:22:58,pamporovo,Средно ниво,187,all-mountain,Зелена,182,All-Mountain
+2025-08-02 18:27:48,pamporovo,Средно ниво,187,all-mountain,Зелена,182,All-Mountain
+2025-08-02 18:28:43,pamporovo,Средно ниво,167,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:30:21,pamporovo,Средно ниво,167,dynamic,Зелена,158,Piste
+2025-08-02 18:30:32,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:30:47,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:32:20,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:33:33,pamporovo,Средно ниво,172,speed,Зелена,158,Slalom
+2025-08-02 18:33:52,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:34:04,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 18:34:14,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:34:23,pamporovo,Средно ниво,176,speed,Зелена,165,Slalom
+2025-08-02 18:34:33,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:34:42,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:38:04,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:38:13,pamporovo,Средно ниво,172,speed,Зелена,158,Slalom
+2025-08-02 18:38:24,pamporovo,Средно ниво,167,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:38:32,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:39:41,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:41:17,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:46:14,pamporovo,Средно ниво,174,speed,Зелена,158,Slalom
+2025-08-02 18:46:21,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:46:28,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:46:34,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:47:04,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:47:07,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:47:15,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:47:20,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:47:29,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:47:36,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:48:54,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:48:59,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:49:03,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:49:07,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:49:12,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:49:30,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:49:34,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:49:56,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:50:00,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:50:06,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:50:52,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 18:59:01,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 18:59:07,pamporovo,Начинаещ,171,dynamic,Зелена,158,Piste
+2025-08-02 18:59:17,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:59:23,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 18:59:35,pamporovo,Експерт,172,all-mountain,Зелена,162,All-Mountain
+2025-08-02 18:59:43,pamporovo,Експерт,172,dynamic,Зелена,162,Piste
+2025-08-02 18:59:50,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:02:50,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:03:48,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:03:51,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:04:06,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:04:17,pamporovo,Експерт,172,dynamic,Зелена,162,Piste
+2025-08-02 19:04:29,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:04:35,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:05:04,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:07:19,pamporovo,Експерт,200,all-mountain,Зелена,175,All-Mountain
+2025-08-02 19:09:17,pamporovo,Експерт,200,speed,Зелена,180,Slalom
+2025-08-02 19:09:26,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:09:44,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 19:09:59,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:10:09,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:11:16,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:11:21,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:11:25,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:11:29,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:12:00,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:14:48,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:14:53,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:15:05,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:15:09,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:15:19,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:15:24,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:09,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:13,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:36,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:36,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:40,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:16:55,pamporovo,Начинаещ,5,dynamic,Зелена,130,Piste
+2025-08-02 19:17:01,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:17:53,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:17:57,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:19:16,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:21:00,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:21:05,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:21:51,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:21:55,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:23:33,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:23:37,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:25:45,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:25:48,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:26:06,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 19:27:46,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:28:18,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:28:23,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:11,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:14,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:18,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:19,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:23,pamporovo,Средно ниво,172,speed,Зелена,158,Slalom
+2025-08-02 19:29:27,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:29:29,pamporovo,Средно ниво,172,dynamic,Зелена,158,Piste
+2025-08-02 19:29:31,pamporovo,Средно ниво,172,speed,Зелена,158,Slalom
+2025-08-02 19:33:42,pamporovo,Средно ниво,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:33:44,pamporovo,Начинаещ,1,dynamic,Зелена,130,Piste
+2025-08-02 19:33:48,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:33:52,pamporovo,Начинаещ,1,dynamic,Зелена,130,Piste
+2025-08-02 19:39:35,pamporovo,Начинаещ,1,dynamic,Зелена,130,all-mountain
+2025-08-02 19:39:41,pamporovo,Начинаещ,172,speed,Зелена,158,all-mountain
+2025-08-02 19:39:57,pamporovo,Начинаещ,172,all-mountain,Зелена,163,all-mountain
+2025-08-02 19:40:03,pamporovo,Начинаещ,172,dynamic,Зелена,158,all-mountain
+2025-08-02 19:40:34,pamporovo,Начинаещ,172,dynamic,Зелена,158,all-mountain
+2025-08-02 19:40:39,pamporovo,Начинаещ,172,dynamic,Зелена,158,all-mountain
+2025-08-02 19:42:08,pamporovo,Начинаещ,172,dynamic,Зелена,158,Piste
+2025-08-02 19:42:13,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:42:16,pamporovo,Начинаещ,1,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:42:20,pamporovo,Начинаещ,1,dynamic,Зелена,130,Piste
+2025-08-02 19:42:24,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:43:20,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:43:24,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:44:40,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:44:43,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:45:11,pamporovo,Средно ниво,1,dynamic,Зелена,130,Piste
+2025-08-02 19:45:19,pamporovo,Експерт,12,speed,Зелена,150,Slalom
+2025-08-02 19:46:45,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:47:11,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:47:16,pamporovo,Начинаещ,172,speed,Зелена,158,Slalom
+2025-08-02 19:47:30,pamporovo,Начинаещ,1,dynamic,Зелена,130,Piste
+2025-08-02 19:47:34,pamporovo,Начинаещ,1,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:47:38,pamporovo,Начинаещ,12,speed,Зелена,130,Slalom
+2025-08-02 19:48:13,pamporovo,Начинаещ,12,speed,Зелена,130,Slalom
+2025-08-02 19:48:17,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:49:30,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:49:40,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:49:44,pamporovo,Начинаещ,12,speed,Зелена,130,Slalom
+2025-08-02 19:50:37,pamporovo,Начинаещ,12,speed,Зелена,130,Slalom
+2025-08-02 19:50:41,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:52:12,pamporovo,Средно ниво,123,speed,Зелена,130,Slalom
+2025-08-02 19:52:18,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:53:41,pamporovo,Начинаещ,1,speed,Зелена,163,All-Mountain
+2025-08-02 19:53:51,pamporovo,Начинаещ,1,speed,Зелена,163,All-Mountain
+2025-08-02 19:53:55,pamporovo,Начинаещ,123,dynamic,Зелена,163,All-Mountain
+2025-08-02 19:54:00,pamporovo,Начинаещ,123,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:54:37,pamporovo,Начинаещ,172,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:55:10,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 19:56:49,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 19:56:53,pamporovo,Начинаещ,1,speed,Зелена,130,Slalom
+2025-08-02 19:56:58,pamporovo,Начинаещ,1,all-mountain,Зелена,163,All-Mountain
+2025-08-02 19:57:02,pamporovo,Начинаещ,1,dynamic,Зелена,130,Piste
+2025-08-02 19:59:59,pamporovo,Експерт,162,speed,Зелена,165,Slalom
+2025-08-02 20:00:07,pamporovo,Експерт,172,speed,Зелена,175,Slalom
+2025-08-02 20:03:06,pamporovo,Експерт,123,speed,Зелена,150,Slalom
+2025-08-02 20:03:13,pamporovo,Експерт,123,speed,Зелена,150,Slalom
+2025-08-02 20:03:33,pamporovo,Експерт,132,speed,Зелена,150,Slalom
+2025-08-02 20:03:38,pamporovo,Начинаещ,12,all-mountain,Зелена,163,All-Mountain
+2025-08-03 08:58:29,pamporovo,Експерт,170,dynamic,Зелена,162,Piste
+2025-08-03 08:58:39,pamporovo,Средно ниво,170,speed,Зелена,158,Slalom
+2025-08-03 08:59:42,pamporovo,Експерт,170,dynamic,Зелена,162,Piste
+2025-08-03 08:59:51,pamporovo,Експерт,170,speed,Зелена,175,Slalom
+2025-08-03 09:17:23,pamporovo,Начинаещ,170,all-mountain,Зелена,163,All-Mountain
+2025-08-03 09:18:10,pamporovo,Средно ниво,170,all-mountain,Зелена,163,All-Mountain
+2025-08-03 09:24:34,pamporovo,Средно ниво,170,all-mountain,Черна,163,All-Mountain
+2025-08-03 09:27:24,pamporovo,Средно ниво,170,speed,Зелена,158,Slalom
+2025-08-03 09:33:03,pamporovo,Начинаещ,3000,all-mountain,Зелена,182,All-Mountain
