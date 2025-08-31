@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, make_response
 from datetime import datetime
 import pandas as pd
 import os
@@ -28,7 +28,7 @@ def show_resort(resort):
     warning = None
     piste_color = "Зелена"
 
-    if request.method == "POST":
+    if request.method == "POST" and "skill" in request.form:
         skill_map = {
             "beginner": "Начинаещ",
             "intermediate": "Средно ниво",
@@ -135,8 +135,35 @@ def show_resort(resort):
         warning=warning,
         piste_color=piste_color,
         skill=skill if 'skill' in locals() else None,
-        predicted_type=locals().get("predicted_type")
+        predicted_type=locals().get("predicted_type"),
+        predicted_length=locals().get("predicted_length")
     )
+
+@app.route("/submit_feedback", methods=["POST"])
+def submit_feedback():
+    email = request.form.get("email")
+    stars = request.form.get("stars")
+    length = request.form.get("length")
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    ip_address = request.remote_addr
+    cookies = request.cookies.to_dict()
+
+    row = {
+        "timestamp": timestamp,
+        "email": email,
+        "length": length,
+        "stars": stars,
+        "ip": ip_address,
+        "cookies": str(cookies)
+    }
+
+    file_exists = os.path.exists("feedback.csv")
+    df = pd.DataFrame([row])
+    df.to_csv("feedback.csv", mode='a', header=not file_exists, index=False)
+
+    resp = make_response(redirect(url_for("index")))
+    resp.set_cookie("feedback_given", "yes", max_age=60*60*24)
+    return resp
 
 if __name__ == '__main__':
     app.run(debug=True)

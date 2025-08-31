@@ -29,7 +29,7 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
       padding: 2rem;
-      width: 300px;
+      width: 320px;
       border-radius: 16px;
       z-index: 10;
       color: #fff;
@@ -89,9 +89,11 @@
     <img src="{{ url_for('static', filename=image) }}" alt="Карта на {{ resort }}">
     <div class="form-container">
       <h2>{{ resort }} - Ски форма</h2>
+
       {% if warning %}
         <div class="warning">{{ warning }}</div>
       {% endif %}
+
       <form method="POST">
         <label>Избери писта:</label>
         <select name="piste_color" required>
@@ -124,15 +126,35 @@
       {% if recommendation %}
         <h3>Препоръка:</h3>
         <p>{{ recommendation }}</p>
+
+        <h3>Мнение:</h3>
+        <form method="POST" action="{{ url_for('submit_feedback') }}">
+          <label for="email">Имейл (по желание):</label>
+          <input type="email" name="email" placeholder="example@mail.com">
+
+          <label for="rating">Оценете препоръката:</label>
+          <select name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ - Отлично</option>
+            <option value="4">⭐⭐⭐⭐ - Много добро</option>
+            <option value="3">⭐⭐⭐ - Добро</option>
+            <option value="2">⭐⭐ - Слабо</option>
+            <option value="1">⭐ - Лошо</option>
+          </select>
+
+          <input type="hidden" name="resort" value="{{ resort }}">
+          <input type="hidden" name="length" value="{{ predicted_length }}">
+          <input type="hidden" name="ski_type" value="{{ predicted_type }}">
+
+          <button type="submit">Изпрати мнение</button>
+        </form>
       {% endif %}
     </div>
   </div>
 
-<script>
-  // Debugging output
-  console.log("Skill:", "{{ skill|default('') }}");
-  console.log("Predicted type:", "{{ predicted_type|default('') }}");
-  console.log("Recommendation:", "{{ recommendation|default('') }}");
-</script>
+  <script>
+    console.log("Skill:", "{{ skill|default('') }}");
+    console.log("Predicted type:", "{{ predicted_type|default('') }}");
+    console.log("Recommendation:", "{{ recommendation|default('') }}");
+  </script>
 </body>
 </html>
